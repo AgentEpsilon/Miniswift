@@ -10,6 +10,7 @@
 		CF31CED21BCF3F6D005C8384 /* Miniswift.h in Headers */ = {isa = PBXBuildFile; fileRef = CF31CED11BCF3F6D005C8384 /* Miniswift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF31CED91BCF3F6D005C8384 /* Miniswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF31CECE1BCF3F6D005C8384 /* Miniswift.framework */; settings = {ASSET_TAGS = (); }; };
 		CF31CEDE1BCF3F6D005C8384 /* MiniswiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF31CEDD1BCF3F6D005C8384 /* MiniswiftTests.swift */; };
+		CF31CEE91BCF3FA0005C8384 /* Miniswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF31CEE81BCF3FA0005C8384 /* Miniswift.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		CF31CED81BCF3F6D005C8384 /* MiniswiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniswiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF31CEDD1BCF3F6D005C8384 /* MiniswiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniswiftTests.swift; sourceTree = "<group>"; };
 		CF31CEDF1BCF3F6D005C8384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF31CEE81BCF3FA0005C8384 /* Miniswift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Miniswift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		CF31CED01BCF3F6D005C8384 /* Miniswift */ = {
 			isa = PBXGroup;
 			children = (
+				CF31CEE81BCF3FA0005C8384 /* Miniswift.swift */,
 				CF31CED11BCF3F6D005C8384 /* Miniswift.h */,
 				CF31CED31BCF3F6D005C8384 /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 		CF31CEC51BCF3F6D005C8384 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Evan Miller";
 				TargetAttributes = {
@@ -193,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF31CEE91BCF3FA0005C8384 /* Miniswift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +307,7 @@
 		CF31CEE31BCF3F6D005C8384 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +320,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.agentepsilon.Miniswift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CF31CEE41BCF3F6D005C8384 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
