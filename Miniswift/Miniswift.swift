@@ -21,9 +21,9 @@ public class Miniswift {
 	: Args
 	= (bools:[:], ints:[:], floats:[:], strings:[:], rest:[])
 	
-    public init(_ flags:[Flag], var argv:[String]=Process.arguments){
+    public init(_ flags:[Flag]){
         
-        //argv = Array(argv[1..<argv.count])
+        var argv = Process.arguments
 		
 	  	for flag in flags {
 	  		switch flag.expects {
